@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>homegui</class>
+ <widget class="QWidget" name="homegui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>445</width>
+    <height>307</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>homegui</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>60</y>
+     <width>221</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="adminModeButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Admin Mode</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="userModeButton">
+      <property name="text">
+       <string>User Mode</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>adminModeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>homegui</receiver>
+   <slot>openAdminMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>392</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>userModeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>homegui</receiver>
+   <slot>openUserMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>382</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openAdminMode()</slot>
+  <slot>openUserMode()</slot>
+ </slots>
+</ui>

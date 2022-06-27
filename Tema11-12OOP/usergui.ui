@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>usergui</class>
+ <widget class="QWidget" name="usergui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>937</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>usergui</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>405</width>
+     <height>292</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="sizelabel">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Size</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="searchSizelineEdit">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="searchSizeButton">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="printCartButton">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Print Cart</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="addToCartButton">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Add to cart</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="nextCoatButton">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Next coat</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stopButton">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Stop</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QListWidget" name="CartListWidget"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addToCartButton</sender>
+   <signal>clicked()</signal>
+   <receiver>usergui</receiver>
+   <slot>addToCart()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>507</x>
+     <y>334</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nextCoatButton</sender>
+   <signal>clicked()</signal>
+   <receiver>usergui</receiver>
+   <slot>nextCoat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>321</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>searchSizeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>usergui</receiver>
+   <slot>searchForSize()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>306</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>431</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stopButton</sender>
+   <signal>clicked()</signal>
+   <receiver>usergui</receiver>
+   <slot>stopProgram()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>253</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>380</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>printCartButton</sender>
+   <signal>clicked()</signal>
+   <receiver>usergui</receiver>
+   <slot>printCart()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>588</x>
+     <y>240</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addToCart()</slot>
+  <slot>nextCoat()</slot>
+  <slot>searchForSize()</slot>
+  <slot>stopProgram()</slot>
+  <slot>printCart()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,5 @@
+C:/Users/Skipper/Desktop/Tema11-12OOP/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Skipper/Desktop/Tema11-12OOP/cmake-build-debug/CMakeFiles/T3.dir
+C:/Users/Skipper/Desktop/Tema11-12OOP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Skipper/Desktop/Tema11-12OOP/cmake-build-debug/CMakeFiles/T3_autogen_timestamp_deps.dir
+C:/Users/Skipper/Desktop/Tema11-12OOP/cmake-build-debug/CMakeFiles/T3_autogen.dir
